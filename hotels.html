@@ -19,9 +19,9 @@
     <main>
       <section class="filters_box">
         <form class="filter" action="" method="post">
-          <fieldset class="infrastructure">
+          <fieldset class="filter_infrastructure">
             <legend>Инфраструктура:<legend>
-            <ul>
+            <ul class="check_filter">
               <li>
                 <input type="checkbox" name="pool" id="filter_pool" checked>
                 <label for="filter_pool">Бассейн</label>
@@ -36,9 +36,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter_hotels_type">
               <legend>Тип жилья:<legend>
-              <ul>
+              <ul class="check_filter">
                 <li>
                   <input type="checkbox" name="hotel" id="filter_hotel" checked>
                   <label for="filter_hotel">Отель</label>
@@ -52,7 +52,7 @@
                     <label for="filter_apartment">Апартаменты</label>
                 </li>                             
               </ul>
-          </fieldset>
+          </fieldset class="filter_range">
           <ul>  
             <li>
               <label for="filter_price">Стоимость в сутки (Р):</label>
