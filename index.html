@@ -7,10 +7,10 @@
   </head>
   <body>
     <header>
-      <nav class="main_nav">
-        <a><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
-        <ul>
-          <li class="main_nav_active"><a>Информация</a></li>
+      <nav class="main_navigation">
+        <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
+        <ul class="site_navigation">
+          <li class="main_nav_active"><a href="">Информация</a></li>
           <li><a href="photo.html">Фото и Видео</a></li>
           <li><a href="map_state.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -70,19 +70,41 @@
       <div class="question">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search">Поиск гостиницы в седоне</button>
-        <form></form>
+        <ul class="user_navigation">
+          <li>
+            <a class="search_link" href="hotels.html">Поиск гостиницы в Седоне</a>
+          </li>
+        </ul>
+        <form class="booking_form" action="" method="post">
+          <p class="booking_item">
+            <label for="booking_entry">Дата заезда</label>
+            <input id="booking_entry" type="date" name="date_of_entry" value="" placeholder="">
+          </p>
+          <p class="booking_item">
+            <label for="booking_departure">Дата выезда</label>
+            <input id="booking_departure" type="date" name="date_of_departure" value="" placeholder="">
+          </p>
+          <p class="booking_item">
+            <label for="booking_grownup">Взрослые:</label>
+            <input id="booking_grownup" class="grownup" type="number" value="2" placeholder="0">
+          </p>
+          <p class="booking_item">
+            <label for="booking_child">Дети:</label>
+            <input id="booking_child" class="children" type="number" value="" placeholder="0">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </div>
       <div class="main_map"><img src="img/map.png" alt="Карта штата Джорджия" width="1200" height="593"></div>
     </main>
     <footer>
       <p><a>#VISITSEDONA</a></p>
       <p>
-        <a></a>
-        <a></a>
-        <a></a>
+        <a href="" aria-label="Твитер"></a>
+        <a href="" aria-label="фэйсбук"></a>
+        <a href="" aria-label="ютуб"></a>
       </p>
-      <p>website by<a href="https://htmlacademy.ru/"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
+      <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
     </footer>
 
   </body>
