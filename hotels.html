@@ -57,10 +57,12 @@
             <legend>Стоимость в сутки (Р):</legend>
             <ul>                
               <li>              
-                <input type="text" name="filter_price_min" placeholder="от 0">
+                <label for="from">от</label>
+                <input type="text" name="filter_price_min" id="from" placeholder="0">
               </li>
               <li>
-                <input type="text" name="filter_price_min" placeholder="до 3000">
+                <label for="to">до</label>
+                <input type="text" name="filter_price_min" id="to" placeholder="3000">
               </li>
               <li>
                 <input type="range" id="filter_price"><!--Заменится после разбора-->
