@@ -18,7 +18,7 @@
     </header>
     <main>
       <section class="filters_box">
-        <form class="filter" action="" method="post">
+        <form name="filter" action="https://echo.htmlacademy.ru " method="get">
           <fieldset class="filter_infrastructure">
             <legend>Инфраструктура:<legend>
             <ul class="check_filter">
@@ -27,44 +27,46 @@
                 <label for="filter_pool">Бассейн</label>
               </li>
               <li>
-                  <input type="checkbox" name="parking" id="filter_parking">
-                  <label for="filter_parking">Парковка</label>
+                <input type="checkbox" name="parking" id="filter_parking">
+                <label for="filter_parking">Парковка</label>
               </li>
               <li>
-                  <input type="checkbox" name="wi_fi" id="filter_wi_fi">
-                  <label for="filter_wi_fi">Wi-fi</label>
+                <input type="checkbox" name="wi_fi" id="filter_wi_fi">
+                <label for="filter_wi_fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter_hotels_type">
-              <legend>Тип жилья:<legend>
-              <ul class="check_filter">
-                <li>
-                  <input type="checkbox" name="hotel" id="filter_hotel" checked>
-                  <label for="filter_hotel">Отель</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="motel" id="filter_motel" checked>
-                    <label for="filter_motel">Мотель</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="apartment" id="filter_apartment" checked>
-                    <label for="filter_apartment">Апартаменты</label>
-                </li>                             
-              </ul>
-          </fieldset class="filter_range">
-          <ul>  
-            <li>
-              <label for="filter_price">Стоимость в сутки (Р):</label>
-              <table>
-                <tr>
-                  <td>от 0</td>
-                  <td>до 3000</td>
-                </tr>
-              </table>
-              <input type="range" id="filter_price">
-            </li>  
-          </ul>
+            <legend>Тип жилья:<legend>
+            <ul class="check_filter">
+              <li>
+                <input type="checkbox" name="hotel" id="filter_hotel" checked>
+                <label for="filter_hotel">Отель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter_motel" checked>
+                <label for="filter_motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="filter_apartment" checked>
+                <label for="filter_apartment">Апартаменты</label>
+              </li>                             
+            </ul>
+          </fieldset>
+          <fieldset class="filter_range">
+            <legend for="filter_price">Стоимость в сутки (Р):</legend>
+            <ul>                
+              <li>              
+                <input type="text" name="filter_price_min" placeholder="от 0">
+              </li>
+              <li>
+                <input type="text" name="filter_price_min" placeholder="до 3000">
+              </li>
+              <li>
+                <input type="range" id="filter_price"><!--Заменится после разбора-->
+              </li>  
+            </ul>
+          </fieldset>
           <button class="show" type="submit">Показать</button>  
         </form>
         <div class="filters_result">
@@ -76,8 +78,8 @@
             <li><a href="">по рейтингу</a></li>
           </ul>
           <ul>
-            <a href=""><img src="img/icon_up_dir.svg" alt=""></a><!--управление сортировкой результатов поиска--> 
-            <a href=""><img src="img/icon_down_dir.svg" alt=""></a>
+            <a href="">по возрастанию</a><!--управление сортировкой результатов поиска--> 
+            <a href="">по убыванию</a>
           </ul>
         </div>
       </section>
@@ -133,7 +135,7 @@
               <p class="hotels_type">Апортаменты</p>
               <p class="price">от 2000 р.</p>
               <a class="detailed" href="">Подробнее</a>
-             <a class="ordered" href="">Забронировать</a>             
+              <a class="ordered" href="">Забронировать</a>             
             </div>
             <div> 
               <p>

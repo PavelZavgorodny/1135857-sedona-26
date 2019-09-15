@@ -66,27 +66,29 @@
       <div class="question">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <ul class="user_navigation">
-          <li>
-            <a class="search_link" href="hotels.html">Поиск гостиницы в Седоне</a>
-          </li>
-        </ul>
-        <form class="booking_form" action="" method="post">
+        <button class="button">Поиск гостиницы в Седоне</button>
+        <form name="booking_form" action="https://echo.htmlacademy.ru " method="post">
           <p class="booking_item">
             <label for="booking_entry">Дата заезда</label>
-            <input id="booking_entry" type="date" name="date_of_entry" value="" placeholder="">
+            <input id="booking_entry" type="text" name="date_of_entry" value="" placeholder="24 апреля 2017">
+            <button class="calendar" type="button"></button>
           </p>
           <p class="booking_item">
             <label for="booking_departure">Дата выезда</label>
-            <input id="booking_departure" type="date" name="date_of_departure" value="" placeholder="">
+            <input id="booking_departure" type="text" name="date_of_departure" value="" placeholder="4 июля 2017">
+            <button class="calendar" type="button"></button>
           </p>
           <p class="booking_item">
             <label for="booking_grownup">Взрослые:</label>
-            <input id="booking_grownup" class="grownup" type="number" value="2" placeholder="0">
+            <button type="button">-</button>
+            <input id="booking_grownup" class="grownup" type="text" value="2" placeholder="0">
+            <button type="button">+</button>
           </p>
           <p class="booking_item">
             <label for="booking_child">Дети:</label>
-            <input id="booking_child" class="children" type="number" value="" placeholder="0">
+            <button type="button">-</button>
+            <input id="booking_child" class="children" type="text" value="" placeholder="0">
+            <button type="button">+</button>
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
