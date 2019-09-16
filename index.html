@@ -4,106 +4,108 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/#">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="main_navigation">
-        <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
-        <ul class="site_navigation">
-          <li class="main_nav_active"><a href="">Информация</a></li>
-          <li><a href="photo.html">Фото и Видео</a></li>
-          <li><a href="map_state.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>  
-    </header>
-    <main>
-      <div class="welcome">
-        <img src="img/intro_welcome.svg" alt="Добро пожаловать в штат Джорджия, Седона" width="459" height="353">
-      </div>  
-      <div>
-        <div class="slogan">
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p> рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
-        </div>
+    <div class="main">
+      <header>
+        <nav class="main_navigation">
+          <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
+          <ul class="site_navigation">
+            <li class="main_nav_active"><a href="">Информация</a></li>
+            <li><a href="photo.html">Фото и Видео</a></li>
+            <li><a href="map_state.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>  
+      </header>
+      <main>
+        <div class="welcome">
+          <img src="img/intro_welcome.svg" alt="Добро пожаловать в штат Джорджия, Седона" width="459" height="353">
+        </div>  
+        <div>
+          <div class="slogan">
+            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p> рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+          </div>
           <ol class="advantage">
-          <li>
-            <h3>Настоящий городок</h3>
-            <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
-            <ul class="advice">
-              <li>
-                <h4>Жильё</h4>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
-              </li>
-              <li>
-                <h4>Еда</h4>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </li>
-              <li>
-                <h4>Сувениры</h4>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-          </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          </li>
-          <li>
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд каньон и толпится там</p>
-          </li>
-        </ol>
-      </div>
-      <div class="question">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button">Поиск гостиницы в Седоне</button>
-        <form name="booking_form" action="https://echo.htmlacademy.ru " method="post">
-          <p class="booking_item">
-            <label for="booking_entry">Дата заезда</label>
-            <input id="booking_entry" type="text" name="date_of_entry" value="" placeholder="24 апреля 2017">
-            <button class="calendar" type="button" aria-label="календарь"></button>
-          </p>
-          <p class="booking_item">
-            <label for="booking_departure">Дата выезда</label>
-            <input id="booking_departure" type="text" name="date_of_departure" value="" placeholder="4 июля 2017">
-            <button class="calendar" type="button" aria-label="календарь"></button>
-          </p>
-          <p class="booking_item">
-            <label for="booking_grownup">Взрослые:</label>
-            <button type="button" aria-label="минус">-</button>
-            <input id="booking_grownup" class="grownup" type="text" value="2" placeholder="0">
-            <button type="button" aria-label="плюс">+</button>
-          </p>
-          <p class="booking_item">
-            <label for="booking_child">Дети:</label>
-            <button type="button" aria-label="минус">-</button>
-            <input id="booking_child" class="children" type="text" value="" placeholder="0">
-            <button type="button" aria-label="плюс">+</button>
-          </p>
-          <button class="button" type="submit">Найти</button>
-        </form>
-      </div>
-      <div class="main_map"><img src="img/map.png" alt="Карта штата Джорджия" width="1200" height="593"></div>
-    </main>
-    <footer>
-      <p><a>#VISITSEDONA</a></p>
-      <p>
-        <a href="" aria-label="Твитер"></a>
-        <a href="" aria-label="фэйсбук"></a>
-        <a href="" aria-label="ютуб"></a>
-      </p>
-      <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
-    </footer>
-
+            <li>
+              <h3>Настоящий городок</h3>
+              <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
+              <ul class="advice">
+                <li>
+                  <h4>Жильё</h4>
+                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+                </li>
+                <li>
+                  <h4>Еда</h4>
+                  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                </li>
+                <li>
+                  <h4>Сувениры</h4>
+                  <p>Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Там есть мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            </li>
+            <li>
+              <h3>Небольшая площадь</h3>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li>
+              <h3>Красивая дорога</h3>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </li>
+            <li>
+              <h3>Мало туристов</h3>
+              <p>Большинство едет в Гранд каньон и толпится там</p>
+            </li>
+          </ol>
+        </div>
+        <div class="question">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button">Поиск гостиницы в Седоне</button>
+          <form name="booking_form" action="https://echo.htmlacademy.ru " method="post">
+            <p class="booking_item">
+              <label for="booking_entry">Дата заезда</label>
+              <input id="booking_entry" type="text" name="date_of_entry" value="" placeholder="24 апреля 2017">
+              <button class="calendar" type="button" aria-label="календарь"></button>
+            </p>
+            <p class="booking_item">
+              <label for="booking_departure">Дата выезда</label>
+              <input id="booking_departure" type="text" name="date_of_departure" value="" placeholder="4 июля 2017">
+              <button class="calendar" type="button" aria-label="календарь"></button>
+            </p>
+            <p class="booking_item">
+              <label for="booking_grownup">Взрослые:</label>
+              <button type="button" aria-label="минус">-</button>
+              <input id="booking_grownup" class="grownup" type="text" value="2" placeholder="0">
+              <button type="button" aria-label="плюс">+</button>
+            </p>
+            <p class="booking_item">
+              <label for="booking_child">Дети:</label>
+              <button type="button" aria-label="минус">-</button>
+              <input id="booking_child" class="children" type="text" value="" placeholder="0">
+              <button type="button" aria-label="плюс">+</button>
+            </p>
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="main_map"><img src="img/map.png" alt="Карта штата Джорджия" width="1200" height="593"></div>
+      </main>
+      <footer>
+        <p><a>#VISITSEDONA</a></p>
+        <p>
+          <a href="" aria-label="Твитер"></a>
+          <a href="" aria-label="фэйсбук"></a>
+          <a href="" aria-label="ютуб"></a>
+        </p>
+        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
+      </footer>
+    </div>
   </body>
 </html>
