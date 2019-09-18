@@ -1,0 +1,187 @@
+body {
+  background-color:#f2f2f2;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 40px;
+  padding-right: 40px;   
+}
+
+.container {
+  box-shadow: 0 0 15px -5px #000000;
+  background-color: #ffffff;
+}
+
+.main_site_navigation a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.main_site_navigation li{
+  list-style: none;
+}
+
+.main_site_navigation a:hover {
+  color: #81b3d2;
+}
+
+.main_site_navigation a:focus {/*найти решение , при переходе между стр*/
+  color: #766357;
+}
+
+.main_site_navigation a:active { 
+  color: #cacaca;
+}
+
+.main_site_navigation : {
+    color: #766357;
+}
+
+.welcome {
+  background-color: #81b3d2;
+  background-image: 
+    url("../img/polygon.svg"),
+    url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position:bottom,top;
+  text-align: center;
+}
+
+.main_description {
+  text-align: center;
+}
+
+.slogan h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.advantage {
+  list-style: none;
+}
+
+.advantage h3 {
+  font-size: 21px;
+  font-weight: bold;
+} 
+
+.advice {
+  list-style: none;
+}
+
+.advice h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.advantage .description_color {
+  background-color: #81b3d2;
+}
+
+selector { /* найти путь */
+  background-color: #a4b09e;
+  background-image: url("../img/real_city.jpg");
+}
+
+selector { /* найти путь */
+  background-color: #a4b09e;
+  background-image: url("../img/devil's_bridge.jpg");
+}
+
+.advantage .description_gray {
+  background-color: #eeeeee;
+}
+
+.question {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.question h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.question form {
+  display: none;
+}
+
+.question button {
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.main_map {
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.main_map img{
+  width: 100%;
+  height: auto;
+}
+
+.main_footer {
+  background-color: rgba (254, 254, 254, 0.9)
+}
+
+.visit a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.visit a:hover {
+  color: #81b3d2;
+}
+
+.visit a:focus {
+  color: #766357;
+}
+
+.visit a:active {
+  color:#cacaca;
+}
+
+span.tviter_icon {
+  display: block;
+  height: 46px;
+  width: 48px;
+  background-color: #81b3d2;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/twitter.svg");
+}
+
+span.fb_icon {
+  display: block;
+  height: 46px;
+  width: 48px;
+  background-color: #81b3d2;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/fb_icon.svg");
+}
+
+span.youtube_icon {
+  display: block;
+  height: 46px;
+  width: 48px;
+  background-color: #81b3d2;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/youtube.svg");
+}
+
+.web {
+  font-size: 14px;
+  color: #000000;
+}

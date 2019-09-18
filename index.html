@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/#">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
-    <div class="main">
-      <header>
-        <nav class="main_navigation">
-          <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
-          <ul class="site_navigation">
-            <li class="main_nav_active"><a href="">Информация</a></li>
-            <li><a href="photo.html">Фото и Видео</a></li>
-            <li><a href="map_state.html">Карта штата</a></li>
+    <div class="container">
+      <header class="main_header">
+        <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
+        <nav class="main_navigation">          
+          <ul class="main_site_navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и Видео</a></li>
+            <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>  
@@ -23,45 +24,70 @@
         <div class="welcome">
           <img src="img/intro_welcome.svg" alt="Добро пожаловать в штат Джорджия, Седона" width="459" height="353">
         </div>  
-        <div>
+        <div class="main_description">
           <div class="slogan">
-            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p> рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
           </div>
           <ol class="advantage">
             <li>
-              <h3>Настоящий городок</h3>
-              <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
-              <ul class="advice">
-                <li>
-                  <h4>Жильё</h4>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
-                </li>
-                <li>
-                  <h4>Еда</h4>
-                  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-                </li>
-                <li>
-                  <h4>Сувениры</h4>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+              <div class="description_color">
+                <h3>Настоящий городок</h3>
+                <span>- №1 -</span>
+                <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
+                <div calss="description_picture_city"></div>
+              </div>
+              <div class="advantages_item">
+                <ul class="advice">
+                  <li>
+                    <div class="house_picture">
+                      <h4>Жильё</h4>
+                      <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="eat_picture">
+                      <h4>Еда</h4>
+                      <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="souvenirs_picture">
+                      <h4>Сувениры</h4>
+                      <p>Не только китайского, но и местного производства!</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>                 
             </li>
             <li>
-              <h3>Там есть мост дьявола</h3>
-              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+              <div class="description_color">
+                <div class="description_picture_canyon"></div>
+                <h3>Там есть мост дьявола</h3>
+                <span>- №2 -</span>              
+                <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+              </div>  
             </li>
             <li>
-              <h3>Небольшая площадь</h3>
-              <p>Все достопримечательности находятся очень близко</p>
+              <div class="description_gray">
+                <h3>Небольшая площадь</h3>
+                <span>- №3 -</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>    
             </li>
             <li>
-              <h3>Красивая дорога</h3>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+              <div class="description_gray">
+                <h3>Красивая дорога</h3>
+                <span>- №4 -</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+              </div>
             </li>
             <li>
-              <h3>Мало туристов</h3>
-              <p>Большинство едет в Гранд каньон и толпится там</p>
+              <div class="description_gray">
+                <h3>Мало туристов</h3>
+                <span>- №5 -</span>
+                <p>Большинство едет в Гранд каньон и толпится там</p>
+              </div>
             </li>
           </ol>
         </div>
@@ -97,14 +123,14 @@
         </div>
         <div class="main_map"><img src="img/map.png" alt="Карта штата Джорджия" width="1200" height="593"></div>
       </main>
-      <footer>
-        <p><a>#VISITSEDONA</a></p>
-        <p>
-          <a href="" aria-label="Твитер"></a>
-          <a href="" aria-label="фэйсбук"></a>
-          <a href="" aria-label="ютуб"></a>
+      <footer class="main_footer">
+        <p class="visit"><a href=#>#VISITSEDONA</a></p>
+        <p class="icon">
+          <span class="tviter_icon"><a href="#" aria-label="Твитер"></a></span>
+          <span class="fb_icon"><a href="#" aria-label="фэйсбук"></a></span>
+          <span class="youtube_icon"><a href="#" aria-label="ютуб"></a></span>
         </p>
-        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
+        <p class="web">website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
       </footer>
     </div>
   </body>
