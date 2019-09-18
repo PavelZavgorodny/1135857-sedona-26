@@ -14,6 +14,10 @@ body {
   background-color: #ffffff;
 }
 
+.main_header {
+  height: 56px;
+}
+
 .main_site_navigation a{
   text-decoration: none;
   color: #000000;
@@ -41,6 +45,8 @@ body {
 }*/
 
 .welcome {
+  padding-top: 76px;
+  height: 508px;
   background-color: #81b3d2;
   background-image: 
     url("../img/polygon.svg"),
@@ -51,17 +57,27 @@ body {
   text-align: center;
 }
 
-.main_description {
+.main_description {  
   text-align: center;
 }
 
+.slogan {
+  height: 217px;  
+}
+
 .slogan h2 {
+  padding-top: 66px;
   font-size: 21px;
   font-weight: bold;
 }
 
 .advantage {
   list-style: none;
+  padding: 0;
+}
+
+.advantage li {
+  height: 256px;
 }
 
 .advantage h3 {
@@ -71,6 +87,13 @@ body {
 
 .advice {
   list-style: none;
+  padding: 0;
+}
+
+.advice li{
+  display: block;
+  width: 400px;
+  height: 256px;
 }
 
 .advice h4 {
@@ -78,17 +101,27 @@ body {
   font-weight: bold;
 }
 
-.advantage .description_color {
-  background-color: #81b3d2;
+.description {
+  width: 400px;
+  height: 256px;
+  padding-top: 50px;
 }
 
-.description_color .description_picture_city { /* найти путь */
+.advantage .description_color {  
+  background-color: #81b3d2;  
+}
+
+div.description_picture_city { 
+  width: 800px;
+  height:256px;
   background-color: #a4b09e;
   background-image: url("../img/real_city.jpg");
   background-repeat: no-repeat;
 }
 
-.description_picture_canyon { /* найти путь */
+div.description_picture_canyon { /* найти путь */
+  width: 800px;
+  height:256px; 
   background-color: #a4b09e;
   background-image: url("../img/devil's_bridge.jpg");
   background-repeat: no-repeat;
