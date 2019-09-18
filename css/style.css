@@ -2,7 +2,7 @@ body {
   background-color:#f2f2f2;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+   font-size: 14px;
   line-height: 21px;
   padding-left: 40px;
   padding-right: 40px;   
@@ -35,9 +35,9 @@ body {
   color: #cacaca;
 }
 
-.main_site_navigation : {
+/*.main_site_navigation {
     color: #766357;
-}
+}*/
 
 .welcome {
   background-color: #81b3d2;
@@ -81,14 +81,16 @@ body {
   background-color: #81b3d2;
 }
 
-selector { /* найти путь */
+.description_color .description_picture_city{ /* найти путь */
   background-color: #a4b09e;
   background-image: url("../img/real_city.jpg");
+  background-repeat: no-repeat;
 }
 
-selector { /* найти путь */
+.description_picture_canyon { /* найти путь */
   background-color: #a4b09e;
   background-image: url("../img/devil's_bridge.jpg");
+  background-repeat: no-repeat;
 }
 
 .advantage .description_gray {
@@ -126,6 +128,91 @@ selector { /* найти путь */
 .main_map img{
   width: 100%;
   height: auto;
+}
+
+section.filters_block {
+  background-color: #81b3d2;
+  background-image: url("../img/filter_background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.selection_form {
+  color:#ffffff;
+  font-size: 16px;
+}
+
+.selection_form li{
+  list-style: none;   
+}
+
+.selection_form legend{
+  font-weight: bold;  
+}
+
+.filters_result p {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.filters_result h3 {
+  font-size: 12px;
+}
+
+.filters_result .sort{
+  list-style: none;
+} 
+
+.filters_result .sorting_list {
+  list-style: none;
+}
+
+.sort a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+}
+
+.sorting_list a{ 
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+.sorting_list .up {
+  background-image: url("../img/icon_up_dir.svg");
+}
+
+.sorting_list .down {
+  background-image: url("../img/icon_down_dir.svg");
+}
+
+.hotels {
+  list-style: none;  
+}
+
+.hotels  :first-child {
+  border-top: 1px solid #5e5e5e5;
+}
+
+.hotels .hotels_foto{
+  background-color: #81b3d2;
+}
+
+.hotels h3{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hotels p{
+  font-size:14px;
+}
+
+.reting_block .reting_txt {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  text-align: center;
+  
 }
 
 .main_footer {

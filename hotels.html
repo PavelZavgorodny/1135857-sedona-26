@@ -21,8 +21,8 @@
         </nav>
       </header>
       <main>
-        <section class="filters_box">
-              <form name="filter" action="https://echo.htmlacademy.ru " method="get">
+        <section class="filters_block">
+              <form class="selection_form" name="filter" action="https://echo.htmlacademy.ru " method="get">
                 <fieldset class="filter_infrastructure">
                   <legend>Инфраструктура:</legend>
                   <ul class="check_filter">
@@ -74,46 +74,46 @@
                   </ul>
                 </fieldset>
                 <button class="show" type="submit">Показать</button>  
-              </form>
-              <div class="filters_result">
-                <p>Найдено:3</p>
-                <h3>Соритровка</h3>
-                <ul>
-                  <li><a href="">по цене</a></li>
-                  <li><a href="">по типу</a></li>
-                  <li><a href="">по рейтингу</a></li>
-                </ul>
-                <ul>
-                  <li><a href="">по возрастанию</a></li><!--управление сортировкой результатов поиска--> 
-                  <li><a href="">по убыванию</a></li>
-                </ul>
-              </div>
+              </form>              
         </section>
-        <div class="hotels">
-          <ul>
+        <section class="filters_result">
+          <p>Найдено:3</p>
+          <h3>Соритровка</h3>
+          <ul class="sort">
+            <li><a href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по рейтингу</a></li>
+          </ul>
+          <ul class="sorting_list">
+            <li><a class="up" href="#">по возр</a></li><!--управление сортировкой результатов поиска--> 
+            <li><a class="down" href="#">по убыв</a></li>
+          </ul>
+        </section>
+        <div class="result_block">
+          <ul class="hotels">
             <li>
-              <div>
+              <div class="hotels_foto">
                 <img src="img/amara.jpg" alt="гостиница на закате в красных тонах, на фоне гор" width="135" height="90">
               </div>
               <div>
                 <h3>Amara resort & spa</h3>
                   <p class="hotels_type">Гостиница<p>
                   <p class="price">от 4000 р.</p>
-                  <a class="detailed" href="">Подробнее</a>
-                  <a class="ordered" href="">Забронировать</a>              
+                  <a class="detailed" href="#">Подробнее</a>
+                  <a class="ordered" href="#">Забронировать</a>              
               </div>
-              <div>
+              <div class="reting_block">
                 <p>
                   <img src="img/star.svg" alt="4 звезды">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p>рейтинг 8,5</p>
+                <p class="reting_txt">рейтинг 8,5</p>
               </div>
             </li>
             <li>
-              <div>
+              <div class="hotels_foto">
                 <img src="img/desert.jpg" alt=" вид мотеля и паркоки с въезда" width="135" height="90">
               </div>
               <div>  
@@ -123,17 +123,17 @@
                 <a class="detailed" href="">Подробнее</a>
                 <a class="ordered" href="">Забронировать</a>              
               </div>
-              <div>
+              <div class="reting_block">
                 <p>
                   <img src="img/star.svg" alt="3 звезды">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p>рейтинг 8,9</p>
+                <p class="reting_txt">рейтинг 8,9</p>
                 </div>  
             </li>
             <li>
-              <div>
+              <div class="hotels_foto">
                 <img src="img/pocod.jpg" alt="вилла в окружение деревьев с ухоженным газоном" width="135" height="90">
               </div>
               <div>
@@ -143,12 +143,12 @@
                 <a class="detailed" href="">Подробнее</a>
                 <a class="ordered" href="">Забронировать</a>             
               </div>
-              <div> 
+              <div class="reting_block"> 
                 <p>
                   <img src="img/star.svg" alt="2 звезды">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p>рейтинг 9,2</p>
+                <p class="reting_txt">рейтинг 9,2</p>
               </div>  
             </li>
           </ul>
