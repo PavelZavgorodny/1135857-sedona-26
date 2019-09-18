@@ -3,12 +3,13 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
    font-size: 14px;
-  line-height: 21px;
-  padding-left: 40px;
-  padding-right: 40px;   
+  line-height: 21px;   
 }
 
 .container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 0 15px -5px #000000;
   background-color: #ffffff;
 }
@@ -81,7 +82,7 @@ body {
   background-color: #81b3d2;
 }
 
-.description_color .description_picture_city{ /* найти путь */
+.description_color .description_picture_city { /* найти путь */
   background-color: #a4b09e;
   background-image: url("../img/real_city.jpg");
   background-repeat: no-repeat;
@@ -191,7 +192,7 @@ section.filters_block {
 }
 
 .hotels  :first-child {
-  border-top: 1px solid #5e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotels .hotels_foto{
