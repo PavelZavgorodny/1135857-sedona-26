@@ -9,17 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <header class="main_header">
-        <a class="main_header_logo" href="index.html"><img src="img/logo_sedona.svg" width="139" height="71" alt="Седона"></a>
-        <nav class="main_navigation">          
-          <ul class="main_site_navigation">
-            <li><a href="index.html">Информация</a></li>
-            <li><a href="#">Фото и Видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a>Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
+        <header class="main_header">
+            <nav class="main_navigation">                        
+              <ul>
+                <li class="main_navigation_item"><a href="index.html">Информация</a></li>
+                <li class="main_navigation_item"><a href="#">Фото и Видео</a></li>
+                <li class="main_navigation_item"><a href="#">Карта штата</a></li>
+                <li class="main_navigation_item"><a>Гостиницы</a></li>
+              </ul>
+            </nav>
+            <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="70" alt="Седона"></a>        
+        </header>
       <main>
         <section class="filters_block">
               <form class="selection_form" name="filter" action="https://echo.htmlacademy.ru " method="get">
@@ -78,90 +78,94 @@
         </section>
         <section class="filters_result">
           <p>Найдено:3</p>
-          <h3>Соритровка</h3>
+          <h2>Соритровка</h2>
           <ul class="sort">
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
           <ul class="sorting_list">
-            <li><a class="up" href="#">по возр</a></li><!--управление сортировкой результатов поиска--> 
-            <li><a class="down" href="#">по убыв</a></li>
+            <li><a class="up" href="#" aria-label="по возрастанию"></a></li><!--управление сортировкой результатов поиска--> 
+            <li><a class="down" href="#" aria-label="по убыванию"></a></li>
           </ul>
         </section>
         <div class="result_block">
           <ul class="hotels">
             <li>
-              <div class="hotels_foto">
+              <div class="hotels_photo">
                 <img src="img/amara.jpg" alt="гостиница на закате в красных тонах, на фоне гор" width="135" height="90">
               </div>
-              <div>
-                <h3>Amara resort & spa</h3>
+              <div class="brief_description">
+                <h3 class="hotel_name">Amara resort & spa</h3>
                   <p class="hotels_type">Гостиница<p>
                   <p class="price">от 4000 р.</p>
                   <a class="detailed" href="#">Подробнее</a>
                   <a class="ordered" href="#">Забронировать</a>              
               </div>
-              <div class="reting_block">
+              <div class="rating_block">
                 <p>
                   <img src="img/star.svg" alt="4 звезды">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p class="reting_txt">рейтинг 8,5</p>
+                <p class="rating_text">рейтинг 8,5</p>
               </div>
             </li>
             <li>
-              <div class="hotels_foto">
+              <div class="hotels_photo">
                 <img src="img/desert.jpg" alt=" вид мотеля и паркоки с въезда" width="135" height="90">
               </div>
-              <div>  
-                <h3>Desert quail inn</h3>
+              <div class="brief_description">  
+                <h3 class="hotel_name">Desert quail inn</h3>
                 <p class="hotels_type">Мотель</p>
                 <p class="price">от 3000 р.</p>
                 <a class="detailed" href="">Подробнее</a>
                 <a class="ordered" href="">Забронировать</a>              
               </div>
-              <div class="reting_block">
+              <div class="rating_block">
                 <p>
                   <img src="img/star.svg" alt="3 звезды">
                   <img src="img/star.svg" alt="">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p class="reting_txt">рейтинг 8,9</p>
+                <p class="rating_text">рейтинг 8,9</p>
                 </div>  
             </li>
             <li>
-              <div class="hotels_foto">
+              <div class="hotels_photo">
                 <img src="img/pocod.jpg" alt="вилла в окружение деревьев с ухоженным газоном" width="135" height="90">
               </div>
-              <div>
-                <h3>Villas at poco diablo</h3>
+              <div class="brief_description">
+                <h3 class="hotel_name">Villas at poco diablo</h3>
                 <p class="hotels_type">Апортаменты</p>
                 <p class="price">от 2000 р.</p>
                 <a class="detailed" href="">Подробнее</a>
                 <a class="ordered" href="">Забронировать</a>             
               </div>
-              <div class="reting_block"> 
+              <div class="rating_block"> 
                 <p>
                   <img src="img/star.svg" alt="2 звезды">
                   <img src="img/star.svg" alt="">
                 </p>
-                <p class="reting_txt">рейтинг 9,2</p>
+                <p class="rating_text">рейтинг 9,2</p>
               </div>  
             </li>
           </ul>
         </div>
       </main>
       <footer class="main_footer">
-        <p class="visit"><a href=#>#VISITSEDONA</a></p>
-        <p class="icon">
-          <span class="tviter_icon"><a href="#" aria-label="Твитер"></a></span>
-          <span class="fb_icon"><a href="#" aria-label="фэйсбук"></a></span>
-          <span class="youtube_icon"><a href="#" aria-label="ютуб"></a></span>
-        </p>
-        <p class="web">website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41"></a></p>
+          <a mainhref="https://www.instagram.com/visitsedona/">#VISITSEDONA</a>
+          <ul class="social_network_icon">
+            <li><a href="https://twitter.com/sedona" aria-label="Седона в твитере"></a></li>
+            <li><a href="https://www.facebook.com/VisitSedona/" aria-label="Седона на фэйсбук"></a></li>
+            <li><a href="https://www.youtube.com/user/SedonaAZ1" aria-label="Седона на ютуб"></a></li>
+          </ul>
+          <p>website by
+            <a class="Academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41">
+            </a>
+          </p>
       </footer>      
     </div>    
   </body>
