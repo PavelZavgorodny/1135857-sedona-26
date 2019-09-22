@@ -26,17 +26,20 @@
         </div>       
         <div class="main_description">
           <b>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</b>
-          <p> рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+          <h2> Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</h2>
         </div>
         <div class="advantage">
           <ol>
             <li class="advantage_item">
-              <h2>Настоящий городок</h2>
-              <span>- №1 -</span>
-              <p>Седона - не атракцион для туристов,<br>там течёт своя жизнь</p>
-            </li>
-            <li class="advantage_item" aria-label="фото зданий города с флагами"></li>        
-            <li>
+              <div class="advantage_item_text">
+                <h2>Настоящий городок</h2>
+                <span>- №1 -</span>
+                <p>Седона - не атракцион для туристов,<br>там течёт своя жизнь</p>
+              </div>
+              <div class="advantage_item_photo">
+                <img src="img/real_city.jpg" alt="фото зданий города с флагами" width="800" height="256">
+              </div>       
+            </li>           
               <ul class="advice">
                 <li class="advice_item">
                   <h3>Жильё</h3>
@@ -51,12 +54,16 @@
                   <p>Не только китайского, но и местного<br> производства!</p>
                 </li>
               </ul>
-            </li>
-            <li class="advantage_item" aria-label="фото каньёна"></li>
+            </li>            
             <li class="advantage_item">
-              <h2>Там есть мост дьявола</h2>
-              <span>- №2 -</span>              
-              <p>Да, по нему можно пройти! Если конечно<br>Вы осмелитесь</p>
+              <div class="advantage_item_photo">
+                <img src="img/devil's_bridge.jpg" alt="фото каньёна" width="800" height="256">
+              </div>
+              <div class="advantage_item_text">
+                <h2>Там есть мост дьявола</h2>
+                <span>- №2 -</span>              
+                <p>Да, по нему можно пройти! Если конечно<br>Вы осмелитесь</p>
+              </div>
             </li>
             <li class="advantage_item">
               <h2>Небольшая площадь</h2>
@@ -93,9 +100,9 @@
             <div class="booking_item_block">
               <p class="booking_item members">
                 <label for="booking_grownup">Взрослые:</label>
-                <button type="button" aria-label="минус">-</button>
+                <button type="button" aria-label="уменьшить количество">-</button>
                 <input id="booking_grownup" class="grownup" type="text" value="2" placeholder="0">
-                <button type="button" aria-label="плюс">+</button>
+                <button type="button" aria-label="увеличить количество">+</button>
               </p>
               <p class="booking_item members">
                 <label for="booking_child">Дети:</label>

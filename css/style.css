@@ -105,7 +105,7 @@ nav.main_header {
   margin-top: 50px;  
 }
 
-.main_description p {
+.main_description h2 {
   font-size: 14px;
   line-height: 26px;
   margin-top: 34px;
@@ -143,12 +143,22 @@ nav.main_header {
   margin-top: 28px;
 }
 
-.advantage_item:nth-child(1) {  
+.advantage_item_text {
+  width: 308px;
+  margin-right: 46px;
+  margin-left: 46px;
+}
+
+.advantage_item:nth-child(1) {
+  width: 1200px;  
+  display: flex;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.advantage_item:nth-last-child(4) {  
+.advantage_item:nth-last-child(4) {
+  width: 1200px;  
+  display: flex; 
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -165,18 +175,14 @@ nav.main_header {
   background-color: #eeeeee;
 }
 
-.advantage_item:nth-child(2) {   
-  background-color: #81b3d2;
-  background-image: url("../img/real_city.jpg");
-  background-size: cover;
+.advantage_item_photo {   
+  background-color: #81b3d2;  
   width: 800px;
   min-height: 256px;  
 }
 
-.advantage_item:nth-child(4) {   
-  background-color: #81b3d2;
-  background-image: url("../img/devil\'s_bridge.jpg");
-  background-size: cover;
+.advantage_item_photo {   
+  background-color: #81b3d2;  
   width: 800px;
   min-height: 256px;  
 }
@@ -510,7 +516,7 @@ ul.social_network_icon {
   line-height: 21px;
 }
 
-.main_footer p {
+.main_footer p {  
   display: flex;
   align-items: center;
   font-size: 14px;
