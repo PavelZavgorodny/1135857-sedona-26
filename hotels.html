@@ -12,13 +12,13 @@
         <header class="main_header">
             <nav class="main_navigation">                        
               <ul>
-                <li class="main_navigation_item"><a href="index.html">Информация</a></li>
+                <li class="main_navigation_item"><a href="#">Информация</a></li>
                 <li class="main_navigation_item"><a href="#">Фото и Видео</a></li>
                 <li class="main_navigation_item"><a href="#">Карта штата</a></li>
                 <li class="main_navigation_item"><a>Гостиницы</a></li>
               </ul>
-            </nav>
-            <a class="main_header_logo"><img src="img/logo_sedona.svg" width="139" height="70" alt="Седона"></a>        
+              <a class="main_header_logo" href="index.html"><img src="img/logo_sedona.svg" width="139" height="70" alt="Седона"></a>
+            </nav>                   
         </header>
       <main>
         <section class="filters_block">
@@ -58,27 +58,19 @@
                   </ul>
                 </fieldset>
                 <fieldset class="filter_range">
-                  <legend>Стоимость в сутки (Р):</legend>
-                  <ul>                
-                    <li>              
-                      <label for="from">от</label>
-                      <input type="text" name="filter_price_min" id="from" placeholder="0">
-                    </li>
-                    <li>
-                      <label for="to">до</label>
-                      <input type="text" name="filter_price_min" id="to" placeholder="3000">
-                    </li>
-                    <li>
-                      <input type="range" id="filter_price"><!--Заменится после разбора-->
-                    </li>  
-                  </ul>
+                  <legend>Стоимость в сутки (Р):</legend>                              
+                  <label for="from">от</label>
+                  <input type="text" name="filter_price_min" id="from" placeholder="0">
+                  <label for="to">до</label>
+                  <input type="text" name="filter_price_min" id="to" placeholder="3000">
+                  <input type="range" id="filter_price"><!--Заменится после разбора-->
                 </fieldset>
                 <button class="show" type="submit">Показать</button>  
               </form>              
         </section>
         <section class="filters_result">
           <p>Найдено:3</p>
-          <h2>Соритровка</h2>
+          <h2>Сортировка</h2>
           <ul class="sort">
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
@@ -155,14 +147,14 @@
         </div>
       </main>
       <footer class="main_footer">
-          <a mainhref="https://www.instagram.com/visitsedona/">#VISITSEDONA</a>
-          <ul class="social_network_icon">
+          <a href="https://www.instagram.com/visitsedona/">#VISITSEDONA</a>
+          <ul class="links_social_toils">
             <li><a href="https://twitter.com/sedona" aria-label="Седона в твитере"></a></li>
             <li><a href="https://www.facebook.com/VisitSedona/" aria-label="Седона на фэйсбук"></a></li>
             <li><a href="https://www.youtube.com/user/SedonaAZ1" aria-label="Седона на ютуб"></a></li>
           </ul>
           <p>website by
-            <a class="Academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo_htmlac.svg" alt="html academy" width="115" height="41">
             </a>
           </p>
