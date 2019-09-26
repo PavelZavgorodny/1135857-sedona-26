@@ -32,7 +32,10 @@ nav.main_header {
 .main_navigation ul {  
   margin: 0;
   padding: 0; 
-  list-style: none; 
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
 .main_header_logo {
@@ -42,7 +45,13 @@ nav.main_header {
   cursor: pointer; 
 }
 
-.main_navigation_item a {  
+.main_navigation_item {
+  width: 240px;
+  min-height: 56px;
+}
+
+.main_navigation_item a {
+  display: block;  
   text-decoration: none;
   line-height: 26px;
   font-size: 14px;
@@ -64,14 +73,16 @@ nav.main_header {
   opacity: 0.3;
 }
 
-.main_navigation_item:nth-child(1),
-.main_navigation_item:nth-child(2) {  
+.main_navigation_item.left {  
   text-align: left;  
 }
 
-.main_navigation_item:nth-child(3),
-.main_navigation_item:nth-child(4) {
-  text-align: right;  
+.main_navigation_item.right {
+  text-align: right;    
+}
+
+.main_navigation_item:nth-child(2) {
+  margin-right: 96px;
 }
 
 .slogan_block {   
@@ -81,9 +92,9 @@ nav.main_header {
     url("../img/polygon.svg"),
     url("../img/background_photo.jpg");
   background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-position: bottom, top;
-  text-align: center;
+  background-size: 100%, cover;
+  background-position: bottom, 100% -56px;
+  text-align: center;  
 }
 
 .slogan_block img {
@@ -91,33 +102,64 @@ nav.main_header {
 }
 
 .main_description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   min-height: 216px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  
 }
 
 .main_description b {
-  font-weight: bold;
+  display: block;
+  font-weight: bold;  
+  margin-bottom: 35px;
+  padding: 0 355px;
 }
 
 .main_description h2 {
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
 }
 
-.advantage {
-  min-height: 1098px;
-}
-
 .advantage ol {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantage_item {
-  width: 400px;
+  background-color: #eeeeee;
   min-height: 256px;
-  text-align: center;
+  width: 400px;
+  text-align: center; 
+}
+
+.advantage_item.expanded {
+  display: flex;
+  flex-wrap: wrap; 
+  background-color: #81b3d2;
+  color: #ffffff;  
+  min-height: 256px;
+  width: 100%;  
+}
+
+.text_block{
+  width: 400px;  
+  min-height: 256px;
+  text-align: center;  
+}
+
+.photo_block {
+  border: none;
+  width: 800px;
+  min-height: 256px;  
 }
 
 .advantage_item h2 {
@@ -130,79 +172,51 @@ nav.main_header {
   font-size: 14px;
   line-height: 21px;
 }
-/*
-.advantage_item_text {
-  width: 308px;
-}
-
-.advantage_item:nth-child(1) {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-.advantage_item:nth-last-child(4) {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-.advantage_item:nth-last-child(3) {
-  background-color: #eeeeee;
-}
-
-.advantage_item:nth-last-child(2) {
-  background-color: #eeeeee;
-}
-
-.advantage_item:last-child {
-  background-color: #eeeeee;
-}
-
-.advantage_item_photo {
-  background-color: #81b3d2;
-  width: 800px;
-  min-height: 256px;
-}
-
-.advantage_item_photo {
-  background-color: #81b3d2;
-  width: 800px;
-  min-height: 256px;
-}*/
 
 .advice {
   list-style: none;
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;  
 }
 
 .advice_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 400px;
   min-height: 330px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 58px;  
+}
+
+.housing {
+  background-image: url("../img/house.svg");
+  
+}
+
+.eat {
+  background-image: url("../img/eat.svg");
+}
+
+.souvenirs {
+  background-image: url("../img/present_box.svg");
 }
 
 .advice h3 {
+  color: #000000;
   font-size: 21px;
   line-height: 21px;
+  margin-top: 158px;
+  margin-bottom: 28px; 
 }
 
 .advice p {
   color: #333333;
   margin-top: 23px;
-}
-
-.advice_item:first-child {
-  background-image: url("../img/house.svg");
-  background-repeat: no-repeat;
-}
-
-.advice_item:nth-child(2) {
-  background-image: url("../img/eat.svg");
-  background-repeat: no-repeat;
-}
-
-.advice_item:last-child {
-  background-image: url("../img/present_box.svg");
-  background-repeat: no-repeat;
 }
 
 .interest {
