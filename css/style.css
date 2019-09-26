@@ -41,7 +41,7 @@ nav.main_header {
 .main_header_logo {
   position: absolute;
   top: 0;
-  left: 530px; 
+  left: 44.21%; /*высчитал*/
   cursor: pointer; 
 }
 
@@ -81,7 +81,7 @@ nav.main_header {
   text-align: right;    
 }
 
-.main_navigation_item:nth-child(2) {
+.main_navigation_item:nth-child(4n-2) {
   margin-right: 96px;
 }
 
@@ -102,15 +102,14 @@ nav.main_header {
 }
 
 .main_description {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
+  
   min-height: 216px;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .main_description b {
@@ -126,19 +125,19 @@ nav.main_header {
   line-height: 26px;
 }
 
-.advantage ol {
+.advantage {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.advantage_item {
+.advantage_item {  
   background-color: #eeeeee;
   min-height: 256px;
   width: 400px;
-  text-align: center; 
+  text-align: center;  
 }
 
 .advantage_item.expanded {
@@ -150,27 +149,34 @@ nav.main_header {
   width: 100%;  
 }
 
-.text_block{
+.text_block{  
   width: 400px;  
   min-height: 256px;
   text-align: center;  
 }
 
-.photo_block {
+.photo_block {  
   border: none;
   width: 800px;
   min-height: 256px;  
 }
 
+.photo_block img{
+  display: block; 
+} 
+
 .advantage_item h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  margin-top: 40px;
+  margin-bottom: 26px;  
 }
 
-.advantage_item p {
+.advantage_item p {  
   font-size: 14px;
   line-height: 21px;
+  margin-top: 30px;  
 }
 
 .advice {
@@ -221,13 +227,18 @@ nav.main_header {
 
 .interest {
   height: 291px;
-  text-align: center;
+  text-align: center; 
 }
 
 .interest h2 {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+}
+
+.interest button {
+  border: none;
+  padding: 0;
 }
 
 .interest p {
@@ -243,7 +254,7 @@ nav.main_header {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
-  background-color: #766357;
+  background-color: #766357;  
 }
 
 .booking_form {
@@ -251,48 +262,67 @@ nav.main_header {
   width: 568px;
   min-height: 395px;
   font-weight: bold;
+  position: absolute;
+  left: 26.35%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .booking_form p {
+
   font-size: 14;
   line-height: 26px;
 }
 
 .date input {
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
-  min-height: 48px;
+  min-height: 38px;
   background-color: #f2f2f2;
-  width: 307px;
+  width: 308px;
   color: #000000;
   font-weight: bold;
+  padding-left: 12px;
+}
+
+.booking_item_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 18px;
 }
 
 .members input {
   width: 38px;
   height: 38px;
   text-align: center;
+  font-weight: bold;  
   background-color: #f2f2f2;
 }
 
 .date button {
-  background-color: #f2f2f2;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 39px;
-  height: 48px;
-  color: #000000;
+  background-color: #f2f2f2;   
+  width: 38px;
+  height: 38px;
+  color: #cacaca;
   font-weight: bold;
 }
 
+
 .booking_form .search {
   width: 458px;
+  height: 58px;
   background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: bold;
+
 }
 
 .members button {
   width: 38px;
+  height: 38px;
   background-color: #f2f2f2;
 }
 
@@ -432,7 +462,18 @@ nav.main_header {
   width: 142px;
 }
 
+.main_footer.index {
+  background-color: #ffffff;
+  width: 100%; 
+  position: absolute;
+  bottom: 0;
+  opacity: 0.9;
+}
+
 .main_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   min-height: 120px;
 }
 
@@ -442,6 +483,7 @@ nav.main_header {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  margin-left: 8px;
 }
 
 ul.social_links_list{
@@ -454,6 +496,10 @@ ul.social_links_list{
 }
 
 .main_footer p {
+  display: flex;
+  align-items: center;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 26px;  
 }
+
+
