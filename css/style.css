@@ -529,11 +529,22 @@ nav.main_header {
 }
 
 .rating_block {
- margin-left: auto;
+  margin-left: auto;
 }
 
 .rating_block img{
   display: inline;
+}
+
+.rating_text {
+  display: block;
+  width: 110px;
+  min-height: 27px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 3px;
 }
 
 .main_footer.index {
@@ -587,10 +598,7 @@ ul.social_links_list{
   background-image: url("../img/youtube.svg");
 }
 
-.rating-text {
-  font-size: 14px;
-  line-height: 21px;
-}
+
 
 .main_footer p {
   display: flex;
