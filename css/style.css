@@ -124,7 +124,10 @@ nav.main_header {
 
 .advantage {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-start;    
   list-style: none;
   margin: 0;
   padding: 0;
@@ -139,8 +142,7 @@ nav.main_header {
 
 .advantage_item.expanded {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
+  flex-wrap: wrap;  
   background-color: #81b3d2;
   color: #ffffff;  
   min-height: 256px;
@@ -158,6 +160,8 @@ nav.main_header {
 
 .photo_block img{
   display: block; 
+  width: 100%;
+  height: auto;
 } 
 
 .advantage_item h2 {
@@ -281,7 +285,11 @@ nav.main_header {
   border: none;
   background-color: #f2f2f2;
   font-weight: bold;  
-  color: #000000; 
+  color: #000000;  
+}
+
+.booking_form label {
+  margin-top: 7px;
 }
 
 .date input {   
@@ -436,28 +444,36 @@ nav.main_header {
   list-style: none;  
 }
 
-.hotels {
+.hotels_list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.hotels li {  
+.hotels_list_item {  
+  min-height: 150px;
   display: flex; 
   align-items: center;   
-  padding: 0 72px;
-  min-height: 150px;
+  padding: 45px 72px;
+  border-top: 1px solid #e5e5e5;  
 }
 
-.hotels img {
+.hotels_list_item:last-child {
+  border-bottom: 1px solid #e5e5e5; 
+}
+
+.hotels_list img {
   display: block;
+  margin-right: 30px;
 }
 
-.brief_description {
+.brief_description { 
+  min-height: 90px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-size: 14px;
-  line-height: 21px; 
+  line-height: 21px;  
 }
 
 .hotel_name {
@@ -476,9 +492,22 @@ nav.main_header {
   height: 27px;
 }
 
-.brief_description p {
-  display: inline-block;
+.brief_description p {  
   margin: 0;
+}
+
+p.hotels_type {
+  width: 110px;
+  margin-right: 6px;
+}
+
+.price {
+  width: 142px;
+}
+
+.characteristic {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .brief_description_buttons {
@@ -504,11 +533,21 @@ nav.main_header {
 }
 
 .rating_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110px;
+  min-height: 90px;
   margin-left: auto;
 }
 
-.rating_block img{
-  display: inline;
+.graphic_rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.graphic_rating img {
+  margin: 0 0 0 6px;
 }
 
 .rating_text {
@@ -519,7 +558,8 @@ nav.main_header {
   line-height: 21px;
   text-align: center;
   background-color: #f2f2f2;
-  padding-top: 3px;
+  padding-top: 3px; 
+  margin: 0; 
 }
 
 /* стили каталога*/
