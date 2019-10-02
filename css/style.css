@@ -125,9 +125,6 @@ nav.main_header {
 .advantage {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-content: flex-end;
-  align-items: flex-start;    
   list-style: none;
   margin: 0;
   padding: 0;
@@ -240,18 +237,16 @@ nav.main_header {
 .interest p {
   max-width: 568px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24px;   
 }
 
 .interest button{
   border: none;
   padding: 0;  
-  margin: 0;
 }
 
-.search_button {
-  position: absolute;
-  bottom: 0;
+.search_button {  
+  margin-top: 42px; 
   display: block;
   width: 568px;
   min-height: 86px;
