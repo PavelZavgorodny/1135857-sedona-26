@@ -100,15 +100,33 @@
             <div class="booking_item_block">
               <p class="booking_item members">
                 <label for="booking_grownup">Взрослые:</label>
-                <button class="reduced_amount" type="button" aria-label="уменьшить количество">-</button>
+                <button class="reduced_amount" type="button" aria-label="уменьшить количество">
+                    <svg width="38" height="38">
+                      <line x1="12" y1="19" x2="24" y2="19" stroke-width="3"/>                                             
+                    </svg>
+                </button>
                 <input id="booking_grownup" class="grownup" type="text" value="2" placeholder="0">
-                <button class="increased_amount" type="button" aria-label="увеличить количество">+</button>
+                <button class="increased_amount" type="button" aria-label="увеличить количество">
+                    <svg width="38" height="38">
+                      <line x1="12" y1="19" x2="24" y2="19" stroke-width="3"/>
+                      <line x1="18" y1="13" x2="18" y2="25" stroke-width="3"/>
+                    </svg>
+                </button>
               </p>
               <p class="booking_item members">
                 <label for="booking_child">Дети:</label>
-                <button class="reduced_amount" type="button" aria-label="уменьшить количество">-</button>
+                <button class="reduced_amount" type="button" aria-label="уменьшить количество">
+                    <svg width="38" height="38">
+                      <line x1="12" y1="19" x2="24" y2="19" stroke-width="3"/>
+                    </svg>
+                </button>
                 <input id="booking_child" class="children" type="text" value="" placeholder="0">
-                <button class="increased_amount" type="button" aria-label="увеличить количество">+</button>
+                <button class="increased_amount" type="button" aria-label="увеличить количество">
+                    <svg width="38" height="38">                        
+                      <line x1="12" y1="19" x2="24" y2="19" stroke-width="3"/>  
+                      <line x1="18" y1="13" x2="18" y2="25" stroke-width="3"/>
+                    </svg>
+                </button>
               </p>
             </div>            
             <button class="search" type="submit">Найти</button>
