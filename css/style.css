@@ -647,19 +647,29 @@ p.hotels_type {
   min-height: 123px;
 }
 
+.main_footer_elements {
+  padding: 0 0 10px 0;
+  margin: 0;
+  display: block;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;   
+}
+
 .main_footer a {
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  margin-left: 8px;
 }
 
 ul.social_links_list{
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 
 .social_links_item {
@@ -669,11 +679,12 @@ ul.social_links_list{
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
 }
 
 .social_links_item:not(:first-child),
 .social_links_item:not(:last-child){
-  margin: 0 6px; 
+  margin: 0 3px; 
 }
 
 .social_links_item a{
@@ -720,6 +731,11 @@ ul.social_links_list{
   align-items: center;
   font-size: 14px;
   line-height: 26px;  
+}
+
+.academy_logo {
+  margin-top: 5px;
+  margin-left: 9px;
 }
 
 p .academy_logo {
