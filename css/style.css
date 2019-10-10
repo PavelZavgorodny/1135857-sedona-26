@@ -415,7 +415,8 @@ nav.main_header {
   min-height: 217px;
   background-color: #81b3d2;
   background-image: url("../img/filter_background.jpg");
-  background-size: cover;
+  background-size: 100%;
+  background-position: 100% 16%;
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 28px 72px;  
