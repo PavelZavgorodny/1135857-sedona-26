@@ -419,7 +419,7 @@ nav.main_header {
   background-position: 100% 16%;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 28px 72px;  
+  padding: 26px 72px 20px 72px;  
 }
 
 .check_filter {
@@ -427,10 +427,11 @@ nav.main_header {
   padding: 0;
   margin-top: 25px;
   margin-bottom: 0px;
-  height:107px; 
+  min-height:112px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .selection_form {
@@ -470,20 +471,158 @@ nav.main_header {
   flex-direction: column;  
 }
 
-.filter_price_border {
-  margin: 10px 0;
-  min-height: 36px;
+.visually_hidden {
+  display: none;
+}
+
+.check_element {
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.checkbox_indicator {
+  display: block;
+}
+
+.check_element input[type="checkbox"] + .checkbox_indicator {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox_off.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.check_element input[type="checkbox"]:disabled + .checkbox_indicator {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox_off.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.check_element input[type="checkbox"]:checked + .checkbox_indicator {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 28px;
+  height: 25px;
+  background-image: url("../img/checkbox_on.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.check_element input[type="checkbox"]:checked:disabled + .checkbox_indicator {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 28px;
+  height: 25px;
+  background-image: url("../img/checkbox_on.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filter_range {
   width: 318px;
+  margin: auto;
+}
+
+.filter_price_border {
+  position: relative;
+  margin: 10px 0 20px 0;
+  min-height: 36px; 
   border: 2px solid #ffffff;
   border-radius: 2px;  
-  
-} 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.filter_price_border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
 
 .filter_price_border input {
   background: none;
   border: none;
-  height: 32px;
-  width: 40px;
+  font-weight: normal;
+  color: #ffffff;
+  width: 50px;
+}
+
+.filter_price_border input::placeholder {
+  color: #ffffff;
+}
+
+.filter_price_border input::placeholder {
+  color: #ffffff;
+}
+
+.filter_price_border input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.filter_price_border .min_price {
+  padding-left: 37px;
+}
+
+.filter_price_border .max_price {
+  padding-left: 19px;
+}
+
+.range_controls {
+  position: relative;
+  margin-bottom: 32px;  
+}
+
+.range_controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range_controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range_toggle {
+  position: absolute;
+  top: -9px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/filter_button.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.range_toggle:hover {
+  width: 22px;
+  height: 22px;
+  background-size: 100%;
+}
+
+.range_toggle_min {
+  left: 0;
+}
+
+.range_toggle_max {
+  left: 80%;
 }
 
 .show {
@@ -596,6 +735,26 @@ nav.main_header {
   width: 11px;  
   list-style: none; 
   margin-left:12px; 
+}
+
+.sorting_list svg {
+  fill: #cacaca;
+}
+
+.down svg{
+  fill: #81b3d2;
+}
+
+.sorting_list svg:hover {
+  fill: #000000;
+}
+
+.sorting_list svg:focus {
+  fill: #000000;
+}
+
+.sorting_list svg:active {
+  fill: #81b3d2;
 }
 
 .hotels_list {
@@ -857,6 +1016,6 @@ p .academy_logo {
   fill: #81b3d2;
 }
 
-.academy_logo:active {   
+.academy_logo svg:active {   
   fill: #bdbbbc;
 }
