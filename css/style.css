@@ -285,6 +285,11 @@ nav.main_header {
   left: 50%;  
   transform: translateX(-50%);
   padding: 55px;
+  box-shadow: 0 0 20px -7px #000000; 
+}
+
+.close_form {
+  display: none;
 }
 
 .booking_form button{
@@ -574,6 +579,18 @@ nav.main_header {
 }
 
 .filter_price_border input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.filter_price_border input::-ms-input-placeholder{
+  color: #ffffff;
+}
+
+.filter_price_border input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.filter_price_border input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
@@ -895,6 +912,13 @@ p.hotels_type {
   background-color: #f2f2f2;
   padding-top: 3px; 
   margin-bottom: 0;
+}
+.main_map {
+  min-height: 590px;
+  width: 100%;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main_footer.index {
