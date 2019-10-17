@@ -148,6 +148,7 @@
           var storage = "";
 
           try {
+            popup.classList.toggle("close_form");
             storage = localStorage.getItem("grownup");
             storage = localStorage.getItem("child");
           } catch (err) {
@@ -155,14 +156,17 @@
           }
           
           link.addEventListener("click", function (evt) {evt.preventDefault();
-          popup.classList.toggle("close_form");
-          popup.classList.toggle("booking_form");
+          popup.classList.add("booking_form");
+          popup.classList.toggle("close_form"); 
+          popup.classList.remove("form_error");         
           focus.focus();
           });
 
           popup.addEventListener("submit", function (evt) {
             if (!entry.value || !departure.value || !grownup.value || !child.value) {
               evt.preventDefault();
+              popup.classList.remove("form_error");
+              popup.offsetWidth = popup.offsetWidth;
               popup.classList.add("form_error");              
             } else {             
               localStorage.setItem("grownup", grownup.value);
@@ -194,7 +198,7 @@
             </ul>
           </div>
           <div class="main_footer_elements">
-            <p>website by
+            <p class="academy_copyright">website by
               <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
                   <title>logo-htmlacademy-small1</title>
