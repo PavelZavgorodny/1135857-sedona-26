@@ -285,8 +285,25 @@ nav.main_header {
   left: 50%;  
   transform: translateX(-50%);
   padding: 55px;
-  box-shadow: 0 0 20px -7px #000000;  
+  box-shadow: 0 0 20px -7px #000000;
+  animation: expandUp;  
+  animation-duration: 0.8s;
 }
+
+@keyframes expandUp {
+  0% {transform: translatex(-50%) translateY(-50%)  scaleY(0);}
+  30%{transform: translatex(-50%) translateY(-20);}   
+  60%{transform: translatex(-50%) translateY(-10);}    
+  100% {transform: translatex(-50%) translateY(0%)  scaleY(1);}   
+}
+
+@-webkit-keyframes expandUp {
+  0% {-webkit-transform: translatex(-50%) translateY(100%) scale(0.6) scaleY(0.5);}
+  60% {-webkit-transform: translatex(-50%) translateY(-7%) scaleY(1.12);}
+  75% {-webkit-transform: translatex(-50%) translateY(3%);}   
+  100% {-webkit-transform: translatex(-50%) translateY(0%) scale(1) scaleY(1);}   
+}
+
 
 .form_error {
   animation-name: shake;
@@ -941,7 +958,7 @@ p.hotels_type {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 36px;  
+  padding: 32px;  
 }
 
 .main_footer_elements {
@@ -1036,6 +1053,11 @@ ul.social_links_list{
   margin-left: 9px;
 }
 
+.academy_logo svg {
+  width: 115px;
+  height: 45px;
+}
+
 p .academy_logo {
   display: block;
   width: 116px;  
@@ -1049,7 +1071,7 @@ p .academy_logo {
   fill: #81b3d2;
 }
 
-.academy_logo svg:active {   
+.academy_logo :active {   
   fill: #bdbbbc;
 }
 
