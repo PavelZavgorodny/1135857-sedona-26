@@ -126,7 +126,7 @@ nav.main_header {
   font-size: 14px;
   margin-top: 24px;
   font-weight: normal;
-  color: #000000;
+  color: #333333;
 }
 
 .advantage {
@@ -151,6 +151,11 @@ nav.main_header {
   color: #ffffff;
   min-height: 256px;
   width: 100%;
+}
+
+.advantage_item h2 {
+  width: 155px;
+  margin: 0 auto;
 }
 
 .text_block {
@@ -180,7 +185,21 @@ nav.main_header {
   width: 305px;
   font-size: 14px;
   line-height: 21px;
-  margin: 23px auto 0 auto;   
+  margin: 23px auto 0 auto; 
+  color: #333333;  
+}
+
+.advantage_item span {
+  color: #333333;
+}
+
+.expanded p {
+  color: #ffffff;
+}
+
+
+.expanded span {
+  color: #ffffff;
 }
 
 .advantage_item:not(.expanded) p{
@@ -249,6 +268,7 @@ nav.main_header {
   max-width: 568px;
   font-size: 14px;
   line-height: 24px;
+  color: #333333;
 }
 
 .interest button{
@@ -338,6 +358,7 @@ nav.main_header {
   background-color: #f2f2f2;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 26px;
   color: #000000;
 }
 
@@ -352,6 +373,7 @@ nav.main_header {
 
 .booking_form label {
   margin-top: 7px;
+  line-height: 26px;
 }
 
 .date input {
@@ -437,6 +459,11 @@ nav.main_header {
 
 }.booking_form .search:focus {
   background-color: #669ec0;
+}
+
+.booking_form ::placeholder { 
+  line-height: 26px;
+  color: #000000;
 }
 
 .booking_form .search:active {
@@ -599,6 +626,7 @@ nav.main_header {
   background: none;
   border: none;
   font-weight: normal;
+  line-height: 21px;
   color: #ffffff;
   width: 50px;
 }
@@ -815,10 +843,13 @@ nav.main_header {
 
 .hotels_list_item {
   min-height: 150px;
-  display: flex; 
-   
+  display: flex;    
   padding: 30px 72px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels_list_item p {
+  color: #333333;
 }
 
 .hotels_list img {
@@ -922,6 +953,10 @@ p.hotels_type {
   width: 110px;
   min-height: 90px;
   margin-left: auto;
+}
+
+.rating_block p {
+  color: #666666;
 }
 
 .graphic_rating {
