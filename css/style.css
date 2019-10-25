@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
@@ -54,6 +54,10 @@ nav.main_header {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+}
+
+.main_header_logo:focus {
+  outline: 1px solid #5496bd;
 }
 
 .main_navigation_item {
@@ -429,6 +433,10 @@ nav.main_header {
   fill: #81b3d2;
 }
 
+.calendar:focus   {
+  fill: #000000;
+}
+
 .members button {
   width: 38px;
   height: 38px;
@@ -439,6 +447,11 @@ nav.main_header {
 .members button:hover {
   stroke: #000000;
 }
+
+.members button:focus {
+  stroke: #000000;
+}
+
 
 .members button:active {
   stroke: #81b3d2;
@@ -532,22 +545,19 @@ nav.main_header {
 }
 
 .visually_hidden {
-  display: none;
+  margin-right: 20px;   
+  opacity: 0; 
 }
 
 .check_element {
   position: relative;
   cursor: pointer;
-  padding-left: 40px;
+  padding-left: 3px;
   margin-top: 25px;
 }
 
 .filter_hotels_type .check_element {
-  padding-left: 43px;
-}
-
-.checkbox_indicator {
-  display: block;
+  padding-left: 7px;
 }
 
 .check_element input[type="checkbox"] + .checkbox_indicator {
@@ -593,6 +603,14 @@ nav.main_header {
   background-image: url("../img/checkbox_on.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.check_label {
+  cursor: pointer;
+}
+
+.check_element input[type="checkbox"]:focus + .checkbox_indicator {
+  outline: 2px solid #5496bd; 
 }
 
 .filter_range {
@@ -999,17 +1017,16 @@ p.hotels_type {
 .main_footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;  
-  min-height: 122px;
+  align-items: center;
 }
 
 .main_footer_elements {
   padding: 0;
-  margin: 0;
+  margin:  23px;
   display: block;
   width: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
 }
 
 .main_footer a {
