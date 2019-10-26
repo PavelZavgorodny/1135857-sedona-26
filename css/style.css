@@ -429,13 +429,15 @@ nav.main_header {
   fill: #000000;
 }
 
+.calendar:focus   {
+  fill: #000000;
+}
+
 .calendar:active{
   fill: #81b3d2;
 }
 
-.calendar:focus   {
-  fill: #000000;
-}
+
 
 .members button {
   width: 38px;
